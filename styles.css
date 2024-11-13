@@ -1,0 +1,137 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("dictionary photo.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The container takes full height */
+.container {
+    width: 100%;
+    max-width: 900px;
+    height: 80%;
+    padding: 40px;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Header styles */
+header h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+header p {
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Search box styling */
+.search-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    width: 70%;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-box input:focus {
+    border-color: #1e3c72;
+}
+
+.search-box button {
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color: #388e3c;
+}
+
+/* Result box styling */
+.result-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    text-align: left;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: none; /* Initially hidden */
+}
+
+.result-box h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.result-box p {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        height: 90%;
+        padding: 20px;
+    }
+
+    .search-box input {
+        width: 60%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .search-box button {
+        padding: 12px 15px;
+        font-size: 1rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .result-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .result-box p {
+        font-size: 1.1rem;
+    }
+}
